@@ -1,0 +1,53 @@
+/*  */
+
+body {
+    background-color: black;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#lightBoxContainer {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    bottom: o;
+    right: 0;
+    top: 0;
+}
+
+#lightBox {
+    border-radius: 10px;
+    height: 60%;
+    width: 45%;
+    transition: .6s all;
+    background-image: url(../images/1.jpeg);
+    background-position: center center;
+    background-size: cover;
+}
+
+@media screen and (max-width:600px) {
+    #lightBox {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:992px) {
+    #lightBox {
+        width: 70%;
+    }
+}
+
+#lightBox i {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(252, 252, 252);
+}
